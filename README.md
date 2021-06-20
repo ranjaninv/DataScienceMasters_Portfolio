@@ -4,12 +4,11 @@ This page contains the list of 10 projects I completed as part of my Master's in
 
 ### Projects
 
+```markdown
 1. [Applied Data Science - YouTube Videos](https://github.com/ranjaninv/ranjaninv.github.io/tree/main/Applied%20Data%20Science%20-%20YouTube%20Videos) 
 2. List
+3. 
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
