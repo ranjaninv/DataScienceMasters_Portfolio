@@ -1,24 +1,10 @@
-## Welcome to GitHub Pages
+## Vikas Ranjan's Data Science portfolio
 
-You can use the [editor on GitHub](https://github.com/ranjaninv/ranjaninv.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+This page contains the list of 10 projects I completed as part of my Master's in Data Science. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Projects
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
+1. [Applied Data Science - YouTube Videos](https://github.com/ranjaninv/ranjaninv.github.io/tree/main/Applied%20Data%20Science%20-%20YouTube%20Videos) 
 2. List
 
 **Bold** and _Italic_ and `Code` text
