@@ -1,6 +1,6 @@
 ## Vikas Ranjan's Data Science Portfolio
 
-I'm Vikas Ranjan and I live in Omaha with my wife and a 5 year old son. I have almost 12 years of experience as an IT professional. I've worked on legacy platforms such as mainframes, IBMi and limited experience with ETL, DB2 content manager and TIBCO BW. I've a bachelor’s degree in computer science. In my free time, I like to read books, audibles these days as it allows to multitask.  
+I'm Vikas Ranjan and I live in Omaha with my wife and a 5 year old son. I have 12 years of experience as an IT professional. I've worked on legacy platforms such as mainframes, IBMi and limited experience with ETL, DB2 content manager and TIBCO BW. I've a bachelor’s degree in computer science. In my free time, I like to read books, audibles these days as it allows to multitask.  
 
 ### Projects
 
