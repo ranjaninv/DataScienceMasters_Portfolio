@@ -1,19 +1,29 @@
-## Vikas Ranjan's Data Science Portfolio
+## Wine reviews - Data Preparation
 
-I'm Vikas Ranjan and I live in Omaha with my wife and a 5 year old son. I have 12 years of experience as an IT professional. I've worked on legacy platforms such as mainframes, IBMi and limited experience with ETL, DB2 content manager and TIBCO BW. I've a bachelor’s degree in computer science. In my free time, I like to read books, audibles these days as it allows to multitask.  
+### Introduction
 
-### Projects
+Wine, a much loved alcoholic drink has been produced and enjoyed since thousands of years. It is typically made from Sented grapes. Different varieties of grapes and strains of yeasts produce different styles of wine. As part of this project, the objective was to identify a dataset with wine reviews, clean it up and gain some insights using data preparation and analysis with R. 
 
-Below is the list of 10 projects I completed as part of my Master's in Data Science.
+### Data Understanding
 
-1. [Data Preparation - Wine review](https://github.com/ranjaninv/ranjaninv.github.io/tree/main/Data%20Preparation%20-%20Wine%20review)
-2. [Data Wrangling - NASDAQ Stocks](https://github.com/ranjaninv/ranjaninv.github.io/tree/main/Data%20Wrangling%20-%20NASDAQ%20Stocks)
-3. [EDA - Wine Review]( https://github.com/ranjaninv/ranjaninv.github.io/tree/main/EDA%20-%20Wine%20Review)
-4. [Data Mining - Fifa21](https://github.com/ranjaninv/ranjaninv.github.io/tree/main/Data%20Mining%20-%20Fifa21)
-5. [Data Visualization - Airline safety](https://github.com/ranjaninv/ranjaninv.github.io/tree/main/Data%20Visualization%20-%20Airline%20safety)
-6. [Predictive Analytics - Credit Card Fraud Detection](https://github.com/ranjaninv/ranjaninv.github.io/tree/main/Predictive%20Analytics%20-%20Credit%20Card%20Fraud%20Detection)
-7. [Weather Retrieval](https://github.com/ranjaninv/ranjaninv.github.io/tree/main/Weather%20Retrieval)
-8. [Applied Data Science - YouTube Videos](https://github.com/ranjaninv/ranjaninv.github.io/tree/main/Applied%20Data%20Science%20-%20YouTube%20Videos)
-9. [Applied Data Science - Project 2](https://github.com/ranjaninv/ranjaninv.github.io/tree/main/Applied%20Data%20Science%20-%20Project%202)
-10. [Applied Data Science - Project 3](https://github.com/ranjaninv/ranjaninv.github.io/tree/main/Applied%20Data%20Science%20-%20Project%203)
+* Dataset - [Wine Reviews](https://www.kaggle.com/zynicide/wine-reviews)
 
+This dataset consists of details of 129971 wines reviews produced across the globe by different wineries. The dataset consists of country, wine description, designation, points, price, province, region_1, region_2, taster_name, taster_twitter_handle, title, variety, winery. We would be looking at various aspects of this data to uncover some insights. 
+
+This dataset is not a clean dataset. Therefore, in order to clean up the dataset had to take various steps such as removing NAs, removing redundant fields, removing fields which had a lot of missing data, updating mean/median values to numeric fields which have missing data.
+
+### Problem Statements
+
+1. Determine which countries/region produces best wines? 
+2. Determine which wineries produces best wines?
+3. Determine which countries/region produces costly wines?
+4. Determine which countries/region produces economical wines?
+5. Determine which countries/region produces economical and high quality wines?
+6. Determine which states are producing most wines?
+7. Determine which countries are producing best and worst wines?
+8. Establish corelation between a price of wines and points scored by the wine?
+
+### Conclusion
+
+1. Answered problem statement in form of graphs/charts.
+5. Based on spearman correlation, it seems like there is strong positive correlation between points and price. 
