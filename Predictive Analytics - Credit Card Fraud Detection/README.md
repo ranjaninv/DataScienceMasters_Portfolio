@@ -37,7 +37,7 @@ The source dataset is clean and contains only numerical input variables which ar
 3. Identified all the key features using SelectKBest
 4. Compared the models based roc_auc score. 
 
-<img width="218" alt="image" src="https://user-images.githubusercontent.com/44445092/124868006-bfb63a80-df84-11eb-843c-85512e616701.png">
+    <img width="218" alt="image" src="https://user-images.githubusercontent.com/44445092/124868006-bfb63a80-df84-11eb-843c-85512e616701.png">
 
 ### Conclusion
 
