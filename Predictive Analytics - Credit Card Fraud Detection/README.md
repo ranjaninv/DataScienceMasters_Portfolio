@@ -18,27 +18,26 @@ The source dataset is clean and contains only numerical input variables which ar
 
 ### EDA (Exploratory Data Analysis)
 
-Distribution of fraudulent transactions amounts
-image
+1. Distribution of fraudulent transactions amounts
+    <img width="412" alt="image" src="https://user-images.githubusercontent.com/44445092/124867647-1bcc8f00-df84-11eb-811f-a02235b29dce.png">
 
-Distribution of transaction time
-<img width="557" alt="image" src="https://user-images.githubusercontent.com/44445092/124867474-c98b6e00-df83-11eb-8536-2c2941057b0f.png">
+2. Distribution of transaction times
 
-Fraud vs Non-Fraud
-image
+  <img width="557" alt="image" src="https://user-images.githubusercontent.com/44445092/124867696-2ab34180-df84-11eb-8817-c997c49d9f96.png">
 
-Pearson Correlation Heatmap
-image
-
+3. Fraud vs Non-Fraud
+  
+  <img width="433" alt="image" src="https://user-images.githubusercontent.com/44445092/124867723-37379a00-df84-11eb-9db9-6cd02bd9fdd0.png">
 
 
-### Modeling
+### Modeling & Evaluation
 
-This dataset is severely imbalanced as most of the transactions are non-fraudulent. So, the algorithms are much likely to classify new observations to the majority class and high accuracy won't tell us anything. To address the problem of imbalanced dataset, we choose to use oversampling data approach technique. Oversampling increases the number of minority class members in the training set. In order to make our data set balanced, we are using a type of oversampling called SMOTE (Synthetic Minority Oversampling Technique) and by doing that we are not losing any information from the original training set as all the observations from the minority and majority classes are retained. SMOTE works by utilizing a k-nearest neighbor algorithm to create synthetic data.
+1. Target variable is "Class", therefore classification model will be applied. 
+2. In order to overcome the challenges with imbalanced dataset, we applied oversampling technique called SMOTE. 
+3. Identified all the key features using SelectKBest
+4. Compared the models based roc_auc score. 
 
-Using the new balanced dataset, performed feature selection which helped to select the features in our dataset which contributes most to the target variable. Using SelectKBest technique, determined 10 best features for the model. This step helps to improve the model accuracy and reduces training time.
-
-For the model selection, compared 4 models namely logistic regression, Random Forest classifier, decision tree classifier and SGD classifier. Based on their roc_auc scores, selected randon forest and logistic regression models. 
+<img width="218" alt="image" src="https://user-images.githubusercontent.com/44445092/124868006-bfb63a80-df84-11eb-843c-85512e616701.png">
 
 ### Conclusion
 
