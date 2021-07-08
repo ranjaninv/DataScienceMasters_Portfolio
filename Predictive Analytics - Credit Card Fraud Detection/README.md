@@ -1,5 +1,7 @@
 ## Credit Card Fraud Prediction
 
+![image](https://user-images.githubusercontent.com/44445092/124867326-80d3b500-df83-11eb-8019-317e68c0e7c1.jpeg)
+
 ### Introduction
 
 Credit cards and electronic payments make overall functioning in a global marketplace much easier. Each year financial institutions lost a chunk of money as a result of credit card fraud. In year 2018, a total of $24.26 Billion was lost due to payment card fraud across the globe and United States being the most fraud prone country. Credit card fraud was ranked number one type of identity theft fraud. Credit card fraud increased by 18.4 percent in 2018 and is still climbing. Credit card fraud includes fraudulent transactions on a credit card or debit card. One of the challenges behind fraud detection is that frauds are far less common as compared to legal transactions. After initial struggle to find a good dataset, came across the dataset on Kaggle which was considerably good to be able to build and train our model. As part of this project, built a few models for fraud detection using anonymized credit card transaction data.
@@ -9,16 +11,26 @@ Credit cards and electronic payments make overall functioning in a global market
 Dataset link - https://www.kaggle.com/mlg-ulb/creditcardfraud
 
 The dataset contains transactions made by credit cards in September 2013 by European cardholders. This dataset presents transactions that occurred in two days, where we have 492 frauds out of 284,807 transactions. The dataset is highly unbalanced, the positive class (frauds) account for 0.172% of all transactions. It contains only numerical input variables which are the result of a PCA transformation.
-
-Attribute Information:
-  1) Time-Numberofsecondselapsedbetweenthistransactionandthefirst transaction in the dataset.
-  2) V1- V28 – These are the result of a PCA Dimensionality reduction to protect user identities and sensitive features.
-  3) Amount–Transactionamount
-  4) Class – This is a response variable and has the values of 1 for fraudulent transactions, and 0 for non-fraudulent transactions.
   
 There are 29 decimal fields and 2 integer fields in the dataset.
 
 The source dataset is clean and contains only numerical input variables which are the result of a PCA transformation. Hence, there wasn’t much scope with regards to data cleaning and preparation.
+
+### EDA (Exploratory Data Analysis)
+
+Distribution of fraudulent transactions amounts
+image
+
+Distribution of transaction time
+<img width="557" alt="image" src="https://user-images.githubusercontent.com/44445092/124867474-c98b6e00-df83-11eb-8536-2c2941057b0f.png">
+
+Fraud vs Non-Fraud
+image
+
+Pearson Correlation Heatmap
+image
+
+
 
 ### Modeling
 
