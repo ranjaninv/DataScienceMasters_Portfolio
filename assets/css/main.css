@@ -144,7 +144,7 @@ input, select, textarea {
 /* Features */
 
 	.features article {
-		border-top: solid 3px #f4f4f4;
+		border-top: solid 5px red;
 		margin-bottom: 2.25em;
 		padding-top: 2.25em;
 	}
