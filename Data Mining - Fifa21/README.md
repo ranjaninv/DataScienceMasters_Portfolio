@@ -37,8 +37,9 @@
 
 ### Conclusion
 
-1. As proven by SelectKBest, transaction time does not have any influence on prediction of fraudulent transaction.
-2. SMOTE oversampling technique helped overcome the Imbalanced datasets challenge.
-3. Using Random Forest Model our model will correctly predict if the transaction was fraudulent or not 98.528% of the time.
-4. Logistic Regression Model our model will correctly predict if the transaction was fraudulent or not 98.032% of the time.
-5. Random forest model has less false positives than logistic regression making it a better model.
+• Highest number of players are within age range of 20-24.
+• It is evident here that a large percentage of players are right foot dominant and there are large number of midfielders compared to other playing positions.
+• International reputation of 3*/4* are not so common among players and very few have 5 * rating.
+• UK has the highest number of players based on Nation wise distribution.
+• When compared between models, logistical regression and random forest models were the best model.
+• And looking at the confusion matrix between logistical regression and random forest model, random forest model seems to have performed slightly better.
