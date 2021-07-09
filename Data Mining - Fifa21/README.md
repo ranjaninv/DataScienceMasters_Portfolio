@@ -37,9 +37,9 @@
 
 ### Conclusion
 
-• Highest number of players are within age range of 20-24.
-• It is evident here that a large percentage of players are right foot dominant and there are large number of midfielders compared to other playing positions.
-• International reputation of 3*/4* are not so common among players and very few have 5 * rating.
-• UK has the highest number of players based on Nation wise distribution.
-• When compared between models, logistical regression and random forest models were the best model.
-• And looking at the confusion matrix between logistical regression and random forest model, random forest model seems to have performed slightly better.
+1. Highest number of players are within age range of 20-24.
+2. It is evident here that a large percentage of players are right foot dominant and there are large number of midfielders compared to other playing positions.
+3. International reputation of 3*/4* are not so common among players and very few have 5 * rating.
+4. UK has the highest number of players based on Nation wise distribution.
+5. When compared between models, logistical regression and random forest models were the best model.
+6. And looking at the confusion matrix between logistical regression and random forest model, random forest model seems to have performed slightly better.
