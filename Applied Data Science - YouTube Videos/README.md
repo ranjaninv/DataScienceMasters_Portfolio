@@ -1,6 +1,7 @@
 ## Credit Card Fraud Prediction
 
-![image](https://user-images.githubusercontent.com/44445092/124867326-80d3b500-df83-11eb-8019-317e68c0e7c1.jpeg)
+https://github.com/ranjaninv/DataScienceMasters_Portfolio/blob/main/images/YouTube1.jpeg?raw=true![image](https://user-images.githubusercontent.com/44445092/125153675-10f83280-e11b-11eb-8b0b-a30608b3c02b.png)
+
 
 ### Introduction
 
