@@ -4,32 +4,34 @@
 
 ### Introduction
 
-Wine, a much loved alcoholic drink has been produced and enjoyed since thousands of years. It is typically made from fermented grapes. Different varieties of grapes and strains of yeasts produce different styles of wine. This dataset consists of details of 129971 wines reviews produced across the globe by different wineries. We would be performing EDA on the wine reviews dataset by analyzing the variables in the dataset. We would be performing statistical functions to uncover some insights from the dataset.
+Wine, a much loved alcoholic drink has been produced and enjoyed since thousands of years. It is typically made from fermented grapes. Different varieties of grapes and strains of yeasts produce different styles of wine. This dataset consists of details of 129971 wines reviews produced across the globe by different wineries. I performed EDA on the wine reviews dataset by analyzing the variables in the dataset, also performed statistical functions to uncover some insights from the dataset.
 
 ### Data Understanding
 
 - Dataset link - https://www.kaggle.com/mlg-ulb/creditcardfraud
 - Wine reviews dataset has 14 columns and 129971 Rows.
-The dataset contains transactions made by credit cards in September 2013 by European cardholders. This dataset presents transactions that occurred in two days, where we have 492 frauds out of 284,807 transactions. The dataset is highly unbalanced, the positive class (frauds) account for 0.172% of all transactions. It contains only numerical input variables which are the result of a PCA transformation.
-  
-There are 29 decimal fields and 2 integer fields in the dataset.
 
-The source dataset is clean and contains only numerical input variables which are the result of a PCA transformation. Hence, there wasn’t much scope with regards to data cleaning and preparation.
+### Data Cleanup
+
+
 
 ### EDA (Exploratory Data Analysis)
 
-1. Distribution of fraudulent transactions amounts
-
+1. Scatter Plot of price and points of the wines.
+     
     <img width="412" alt="image" src="https://user-images.githubusercontent.com/44445092/124867647-1bcc8f00-df84-11eb-811f-a02235b29dce.png">
 
-2. Distribution of transaction times
+2. Histogram of wine scores/price and comparison of US and French wines.
 
-    <img width="557" alt="image" src="https://user-images.githubusercontent.com/44445092/124867696-2ab34180-df84-11eb-8817-c997c49d9f96.png">
+    <img width="574" alt="image" src="https://user-images.githubusercontent.com/44445092/125156632-15791700-e12c-11eb-95fd-1a81d10b8fff.png">
 
-3. Fraud vs Non-Fraud
+3. Below histogram suggests that most of the US Wines are having a score of 91.
   
     <img width="433" alt="image" src="https://user-images.githubusercontent.com/44445092/124867723-37379a00-df84-11eb-9db9-6cd02bd9fdd0.png">
 
+4. Below histogram suggests that most of the US Wines are having a score of 91.
+
+    <img width="582" alt="image" src="https://user-images.githubusercontent.com/44445092/125156670-53763b00-e12c-11eb-8455-7d7bb2a9177f.png">
 
 ### Modeling & Evaluation
 
