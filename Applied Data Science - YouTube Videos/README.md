@@ -1,15 +1,14 @@
-## Credit Card Fraud Prediction
+## YouTube Videos - Likes and Views Prediction
 
-https://github.com/ranjaninv/DataScienceMasters_Portfolio/blob/main/images/YouTube1.jpeg?raw=true![image](https://user-images.githubusercontent.com/44445092/125153675-10f83280-e11b-11eb-8b0b-a30608b3c02b.png)
-
+![image](https://user-images.githubusercontent.com/44445092/125153792-d347d980-e11b-11eb-8a10-c797d710b6f6.png)
 
 ### Introduction
 
-Credit cards and electronic payments make overall functioning in a global marketplace much easier. Each year financial institutions lost a chunk of money as a result of credit card fraud. In year 2018, a total of $24.26 Billion was lost due to payment card fraud across the globe and United States being the most fraud prone country. Credit card fraud was ranked number one type of identity theft fraud. Credit card fraud increased by 18.4 percent in 2018 and is still climbing. Credit card fraud includes fraudulent transactions on a credit card or debit card. One of the challenges behind fraud detection is that frauds are far less common as compared to legal transactions. After initial struggle to find a good dataset, came across the dataset on Kaggle which was considerably good to be able to build and train our model. As part of this project, built a few models for fraud detection using anonymized credit card transaction data.
+YouTube is an online video sharing and social media platform. It is the world’s second largest search engine and second most visited site after Google. In fact, 37% of all mobile internet traffic belongs to YouTube. It is the second most popular social media platform with almost 1.9bn users. YouTube has not only become a great alternative to traditional media but with billions of hours of content and countless number of corporations and groups, YouTube has also transformed into a tool for social impact. I looked for the trends in the data related to the uploaded videos US and see how various attributes are correlated. I also performed basic text analysis on ‘Description’ of the videos and build a word cloud to see which are most used words in the description of the uploaded videos. The idea is to build a model to predict the number of likes a video might get and another model to predict the number of views an uploaded video might get. This analysis and modeling are intended to help an influencer or content creator access their efforts effectively.
 
 ### Data Understanding
 
-Dataset link - https://www.kaggle.com/mlg-ulb/creditcardfraud
+- Dataset link - https://www.kaggle.com/datasnaek/youtube-new
 
 The dataset contains transactions made by credit cards in September 2013 by European cardholders. This dataset presents transactions that occurred in two days, where we have 492 frauds out of 284,807 transactions. The dataset is highly unbalanced, the positive class (frauds) account for 0.172% of all transactions. It contains only numerical input variables which are the result of a PCA transformation.
   
