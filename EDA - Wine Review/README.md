@@ -18,8 +18,8 @@ Wine, a much loved alcoholic drink has been produced and enjoyed since thousands
 ### EDA (Exploratory Data Analysis)
 
 1. Scatter Plot of price and points of the wines.
-     
-    <img width="412" alt="image" src="https://user-images.githubusercontent.com/44445092/124867647-1bcc8f00-df84-11eb-811f-a02235b29dce.png">
+    
+    <img width="473" alt="image" src="https://user-images.githubusercontent.com/44445092/125156744-b23bb480-e12c-11eb-8e8d-140adaaa8d59.png">
 
 2. Histogram of wine scores/price and comparison of US and French wines.
 
