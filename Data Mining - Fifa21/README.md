@@ -1,4 +1,4 @@
-## Fifa21 - Players Analysis 
+## Fifa21 - Players Analysis & Prediction 
 
 ![image](https://user-images.githubusercontent.com/44445092/125036466-a4b4fa80-e058-11eb-801f-6d4d49780e7a.png)
 
