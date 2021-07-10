@@ -4,6 +4,9 @@
 
 ### Introduction
 
+FIFA (Fédération Internationale de Football Association) is the governing body of the association football. FIFA periodically releases players statistics. These statistics are very important and depicts every aspect of the players performance.
+
+As part of this case study, I will be applying data mining and visualization techniques learnt during this course. With graph analysis, various trends and patterns related to players and their performance will be identified. Based on the various players performance data, I’ll try to predict if a player will be able to have an overall score of greater than 80. The intent is also to find which all features are most important in order to make that prediction. Player’s performance data is used by various soccer clubs to sign up new players or buy players contracts from other clubs. This prediction model can be used by club managers and recruiters to identify new players and predict if they will have high overall scores.
 
 ### Data Understanding
 
