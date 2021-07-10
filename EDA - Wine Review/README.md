@@ -13,7 +13,21 @@ Wine, a much loved alcoholic drink has been produced and enjoyed since thousands
 
 ### Data Cleanup
 
+- Below is the snapshot of missing data in the dataset:
+    - There are 9 columns that have missing values.
+    - There is 1 column having greater than 50% missing values.
+    - There is 1 column having greater than 40% missing values.
+    - There is 1 column having greater than 30% missing values.
+    - There are 4 columns having greater than 20% missing values. 
+    - There are 5 columns having greater than 10% missing values.
 
+- There are duplicates in the description field, therefore we need to remove them.
+- First variable “"Unnamed: 0” in the data frame is just the serial #, therefore it is safe to remove
+them as there is no benefit of it to provide insight about data.
+- We also need to remove the region2 from data frame since majority of it is not having any value.
+- We also need to null values from the dataframe.
+- There are 47660 rows and 11 columns, after all the cleanup and removing all rows with null
+values.
 
 ### EDA (Exploratory Data Analysis)
 
@@ -27,25 +41,29 @@ Wine, a much loved alcoholic drink has been produced and enjoyed since thousands
 
 3. Below histogram suggests that most of the US Wines are having a score of 91.
   
-    <img width="433" alt="image" src="https://user-images.githubusercontent.com/44445092/124867723-37379a00-df84-11eb-9db9-6cd02bd9fdd0.png">
+    <img width="580" alt="image" src="https://user-images.githubusercontent.com/44445092/125156785-ee6f1500-e12c-11eb-96fb-a8a23d58cbd2.png">
 
-4. Below histogram suggests that most of the US Wines are having a score of 91.
+4. Below histogram suggests that most of the French wines are having a score of 88.5.
 
-    <img width="582" alt="image" src="https://user-images.githubusercontent.com/44445092/125156670-53763b00-e12c-11eb-8455-7d7bb2a9177f.png">
+    <img width="594" alt="image" src="https://user-images.githubusercontent.com/44445092/125156813-0f376a80-e12d-11eb-8e02-d4d098010804.png">
+
+5. PMF of wine scores.
+
+    <img width="574" alt="image" src="https://user-images.githubusercontent.com/44445092/125156845-4148cc80-e12d-11eb-94c1-a2825d4e8f81.png">
+
+6. CDF of price between US and French wines which have score greater than 90.
+
+    <img width="561" alt="image" src="https://user-images.githubusercontent.com/44445092/125156894-866cfe80-e12d-11eb-94ff-7d82ea6bbf42.png">
+
+    
 
 ### Modeling & Evaluation
 
-1. Target variable is "Class", therefore classification model will be applied. 
-2. In order to overcome the challenges with imbalanced dataset, we applied oversampling technique called SMOTE. 
-3. Identified all the key features using SelectKBest
-4. Compared the models based roc_auc score. 
+1. Created a model to predict the price of the wine based on the score of the wine. And based on it, tried to predict what might be the price of a wine which has a score of 97.
 
-    <img width="218" alt="image" src="https://user-images.githubusercontent.com/44445092/124868006-bfb63a80-df84-11eb-843c-85512e616701.png">
+    <img width="547" alt="image" src="https://user-images.githubusercontent.com/44445092/125156959-d2b83e80-e12d-11eb-9bcc-0a184fa05a49.png">
 
 ### Conclusion
 
-1. As proven by SelectKBest, transaction time does not have any influence on prediction of fraudulent transaction.
-2. SMOTE oversampling technique helped overcome the Imbalanced datasets challenge.
-3. Using Random Forest Model our model will correctly predict if the transaction was fraudulent or not 98.528% of the time.
-4. Logistic Regression Model our model will correctly predict if the transaction was fraudulent or not 98.032% of the time.
-5. Random forest model has less false positives than logistic regression making it a better model.
+- One of the biggest challenge I faced was that I only had 2 numeric variables (price and points) to play with.
+
