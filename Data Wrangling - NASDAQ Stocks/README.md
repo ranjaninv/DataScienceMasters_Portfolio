@@ -1,6 +1,6 @@
 ## YouTube Videos - Likes and Views Prediction
 
-![image](https://user-images.githubusercontent.com/44445092/125187884-6144c280-e1f7-11eb-9e7b-94fe8752c169.png)
+![image](https://user-images.githubusercontent.com/44445092/125187999-ee881700-e1f7-11eb-9882-6582eb426ff6.png)
 
 ### Introduction
 
