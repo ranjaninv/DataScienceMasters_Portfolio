@@ -11,7 +11,7 @@ Stocks are traded on stock exchages such as NYSE and NASDAQ. As a keen investor,
 - Data sources:
   - [Kaggle](https://www.kaggle.com/suchitgupta60/s-p-500-companies-fundamentals-script) - This csv file contains extensive fundamentals data for 1781 stocks.
   - [Web Scraping](https://finance.yahoo.com/screener/unsaved/9cf4468e-7dc3-4be3-bc18-1db7ab68efcf?count=100&offset=1) - Stocks data from Yahoo Fianance was retreived by web scraping.   
-  - [API call](https://financialmodelingprep.com/api/v3/quotes/NASDAQ) 
+  - [API call](https://financialmodelingprep.com/api/v3/quotes/NASDAQ) - Stocks performace data was retrieved by API call. 
  
 ### Process Outline
  
@@ -23,22 +23,22 @@ Stocks are traded on stock exchages such as NYSE and NASDAQ. As a keen investor,
    
 ### EDA (Exploratory Data Analysis)
 
-1. Below chart shows the days of the week which had the largest numbers of trending videos. There is a trend that on weekends, there are lesser videos being uploaded.
+1. Top 10 earning companies in regards to net income.
 
     ![image](https://user-images.githubusercontent.com/44445092/125202382-fe741b00-e238-11eb-97ab-07d43fabbf79.png)
 
  
-2. Data and plot shows the trend that most of the videos are being uploaded on the weekdays, and over the weekends there is a significant drop in videos being published.
+2. Top 10 companies when by total revenue.
 
-    <img width="544" alt="image" src="https://user-images.githubusercontent.com/44445092/125154498-e492e500-e11f-11eb-8c51-1c7dd411182f.png">
+    ![image](https://user-images.githubusercontent.com/44445092/125202536-9e31a900-e239-11eb-9d91-5e8ce3bfa016.png)
 
-3. Below plot shows the trend that most of the videos are being uploaded between 14:00 and 16:00, highest number of videos being uploaded are around 16:00.
+3. Scatterplot of Total assets vs liabilities of top 10 earning companies by revenue.
   
-    <img width="543" alt="image" src="https://user-images.githubusercontent.com/44445092/125154619-74d12a00-e120-11eb-86ce-9fbf27d17d1b.png">
+    <img width="411" alt="image" src="https://user-images.githubusercontent.com/44445092/125202814-f9b06680-e23a-11eb-8aec-b5fcbe926173.png">
     
-4. Entertainment category contains the largest number of trending videos with around 10,000 videos, second is Music category with around 6,200 videos, followed by How to & Style category with around 4,100 videos.
+4. Comparing Total revenue vs Net income of these top 10 earning companies.
 
-    <img width="599" alt="image" src="https://user-images.githubusercontent.com/44445092/125154654-a2b66e80-e120-11eb-83a1-7dec99a6a531.png">
+    <img width="414" alt="image" src="https://user-images.githubusercontent.com/44445092/125202834-151b7180-e23b-11eb-9775-eea7645d2e9b.png">
 
 5. Music and entertainment videos have the most number of likes.
 
