@@ -7,18 +7,26 @@
 Stocks are traded on stock exchages such as NYSE and NASDAQ. As a keen investor, I've always been intrigued by stocks, hence I decided to retrieve the stocks data for NASDAQ from various sources for data wrangling. As part of this project, I retrieved data from three different sources using three different methods, performed data cleanup, merged and add into a database, & apply data wrangling steps. 
 
 ### Data Understanding
-
-- Data sources:
-  - CSV file download - [Kaggle](https://www.kaggle.com/suchitgupta60/s-p-500-companies-fundamentals-script)
-  - Web Scraping - 
-  - API call - https://financialmodelingprep.com/api/v3/quotes/NASDAQ
-- This dataset includes 40950 rows and 16 feature variables where each row corresponds to a unique video.
   
+- Data sources:
+  - [Kaggle](https://www.kaggle.com/suchitgupta60/s-p-500-companies-fundamentals-script) - This csv file contains extensive fundamentals data for 1781 stocks.
+  - [Web Scraping](https://finance.yahoo.com/screener/unsaved/9cf4468e-7dc3-4be3-bc18-1db7ab68efcf?count=100&offset=1) - Stocks data from Yahoo Fianance was retreived by web scraping.   
+  - [API call](https://financialmodelingprep.com/api/v3/quotes/NASDAQ) 
+ 
+### Process Outline
+ 
+ - Downloaded the csv from Kaggle and loaded it into a dataframe.
+ - To retrieve stocks data by web scraping, read the web page data, fetched and parsed the table contents into lists and eventually to the dataframe.
+ - To retrieve data using API call, first API keys was retrieved. With the API keys, performed the API call which resulted in the response of json data. Parsed the JSON data to pick the desired attributes and loaded them in a csv file. The csv file was then loaded into a dataframe.
+ - Once data from all three sources were available, loaded the data into SQLLite database in 3 different tables and eventually merged them in one table. 
+ - Upon merging the data, performed EDA on the merged dataset. 
+   
 ### EDA (Exploratory Data Analysis)
 
 1. Below chart shows the days of the week which had the largest numbers of trending videos. There is a trend that on weekends, there are lesser videos being uploaded.
 
-    <img width="697" alt="image" src="https://user-images.githubusercontent.com/44445092/125154396-73ebc880-e11f-11eb-8f7f-3da1b386d406.png">
+    ![image](https://user-images.githubusercontent.com/44445092/125202382-fe741b00-e238-11eb-97ab-07d43fabbf79.png)
+
  
 2. Data and plot shows the trend that most of the videos are being uploaded on the weekdays, and over the weekends there is a significant drop in videos being published.
 
