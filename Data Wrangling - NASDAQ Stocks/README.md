@@ -1,15 +1,17 @@
-## YouTube Videos - Likes and Views Prediction
+## NASDAQ Stocks - Data Wrangling
 
 ![image](https://user-images.githubusercontent.com/44445092/125187999-ee881700-e1f7-11eb-9882-6582eb426ff6.png)
 
 ### Introduction
 
-YouTube is an online video sharing and social media platform. It is the world’s second largest search engine and second most visited site after Google. In fact, 37% of all mobile internet traffic belongs to YouTube. It is the second most popular social media platform with almost 1.9bn users. YouTube has not only become a great alternative to traditional media but with billions of hours of content and countless number of corporations and groups, YouTube has also transformed into a tool for social impact. I looked for the trends in the data related to the uploaded videos US and see how various attributes are correlated. I also performed basic text analysis on ‘Description’ of the videos and build a word cloud to see which are most used words in the description of the uploaded videos. The idea is to build a model to predict the number of likes a video might get and another model to predict the number of views an uploaded video might get. This analysis and modeling are intended to help an influencer or content creator access their efforts effectively.
+Stocks are traded on stock exchages such as NYSE and NASDAQ. As a keen investor, I've always been intrigued by stocks, hence I decided to retrieve the stocks data for NASDAQ from various sources for data wrangling. As part of this project, I retrieved data from three different sources using three different methods, performed data cleanup, merged and add into a database, & apply data wrangling steps. 
 
 ### Data Understanding
 
-- Dataset link - https://www.kaggle.com/datasnaek/youtube-new
-- The dataset contains details of the videos uploaded on YouTube in US during 2018 and 2019.
+- Data sources:
+  - CSV file download - https://www.kaggle.com/suchitgupta60/s-p-500-companies-fundamentals-script
+  - Web Scraping - 
+  - API call - https://financialmodelingprep.com/api/v3/quotes/NASDAQ
 - This dataset includes 40950 rows and 16 feature variables where each row corresponds to a unique video.
   
 ### EDA (Exploratory Data Analysis)
