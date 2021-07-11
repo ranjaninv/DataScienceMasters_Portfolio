@@ -9,7 +9,7 @@ Stocks are traded on stock exchages such as NYSE and NASDAQ. As a keen investor,
 ### Data Understanding
 
 - Data sources:
-  - CSV file download - https://www.kaggle.com/suchitgupta60/s-p-500-companies-fundamentals-script
+  - CSV file download - [Kaggle](https://www.kaggle.com/suchitgupta60/s-p-500-companies-fundamentals-script)
   - Web Scraping - 
   - API call - https://financialmodelingprep.com/api/v3/quotes/NASDAQ
 - This dataset includes 40950 rows and 16 feature variables where each row corresponds to a unique video.
