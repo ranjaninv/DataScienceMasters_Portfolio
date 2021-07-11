@@ -40,52 +40,18 @@ Stocks are traded on stock exchages such as NYSE and NASDAQ. As a keen investor,
 
     <img width="414" alt="image" src="https://user-images.githubusercontent.com/44445092/125202834-151b7180-e23b-11eb-9775-eea7645d2e9b.png">
 
-5. Music and entertainment videos have the most number of likes.
+5. Ploted the Kernel Density function of Percentage change of the prices.
 
-    <img width="595" alt="image" src="https://user-images.githubusercontent.com/44445092/125154684-cd082c00-e120-11eb-819a-dfb9a9ed599c.png">
+    <img width="406" alt="image" src="https://user-images.githubusercontent.com/44445092/125202869-4a27c400-e23b-11eb-9c29-fff2bc4c01f5.png">
 
-6. ESPN seem to have the greatest number of videos, followed by late night shows, mostly in entertainment category.
+6. Histogram of stock prices listed in the merged dataset.
 
-    <img width="809" alt="image" src="https://user-images.githubusercontent.com/44445092/125154713-ff198e00-e120-11eb-83c4-4d617419a231.png">
+    <img width="395" alt="image" src="https://user-images.githubusercontent.com/44445092/125202905-7a6f6280-e23b-11eb-8dbe-35ff1c8016c9.png">
 
-7. There seems to be positive correlation between the number of views and the no of likes of a video.
-
-    <img width="502" alt="image" src="https://user-images.githubusercontent.com/44445092/125154775-6a636000-e121-11eb-8a46-a0236143706b.png">
-
-8. Correlation matrix between views, likes, dislikes and number of comments on the video.
-
-    <img width="640" alt="image" src="https://user-images.githubusercontent.com/44445092/125154807-8d8e0f80-e121-11eb-93d6-eaa7d51042b8.png">
-
-    <img width="430" alt="image" src="https://user-images.githubusercontent.com/44445092/125154836-b2828280-e121-11eb-990a-de0cb54b8161.png">
-
-9. Word cloud for the Description field, showing the most used words in the description.
-
-    <img width="417" alt="image" src="https://user-images.githubusercontent.com/44445092/125154863-cd54f700-e121-11eb-8251-bd53f0bbb7f0.png">
-
-
-### Modeling & Evaluation
-
-1. As part of modeling, the intent is to build a model to predict number of likes and number of views on a video. Since both these values are continuous variables, therefore regression models are to be applied.
-
-2. Results of linear Regression to predict number of likes. 
-
-    <img width="644" alt="image" src="https://user-images.githubusercontent.com/44445092/125155036-e6aa7300-e122-11eb-8f14-3e4e54238de2.png">
-
-3. Results of linear Regression to predict number of views. 
-
-    <img width="640" alt="image" src="https://user-images.githubusercontent.com/44445092/125155085-36893a00-e123-11eb-98e1-6e384e604dcc.png">
-
-4. Linear regression results shows that r-squared score of 0.76 which is not accurate enough. 
-
-5. Random Forest Regressor model to predict number of views has a mean absolute error (MAE) of 220924 and score of 0.985.
-
-    <img width="382" alt="image" src="https://user-images.githubusercontent.com/44445092/125155157-98e23a80-e123-11eb-8ff8-c6fc6c7094bc.png">
 
 ### Conclusion
 
-1. Linear Regression is a good fit when modeling to predict number of likes.
-2. To predict the number of views, Random Forest Regressor has better score than linear regression. 
-3. Positive correlation between the number of views and the number of likes of a video. Like wise is the case with the number of views and the no of comments on a video.
-4. The data set I worked with could have had few more attributes such comment text, length of the video, number of subscribers, etc. 
-
+1. Stocks data retrived from 3 different sources using different methods and loaded into database tables. 
+2. Looking at the EDA results, Apple Inc is the top earning company on NASDAQ. 
+3. Apple Inc has the highest revenue. 
 
