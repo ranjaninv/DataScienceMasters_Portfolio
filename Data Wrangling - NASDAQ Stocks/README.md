@@ -42,7 +42,7 @@ Stocks are traded on stock exchages such as NYSE and NASDAQ. As a keen investor,
 
 5. Ploted the Kernel Density function of Percentage change of the prices.
 
-    <img width="406" alt="image" src="https://user-images.githubusercontent.com/44445092/125202869-4a27c400-e23b-11eb-9c29-fff2bc4c01f5.png">
+    <img width="414" alt="image" src="https://user-images.githubusercontent.com/44445092/125203038-3d57a000-e23c-11eb-9992-3cf014bde3c3.png">
 
 6. Histogram of stock prices listed in the merged dataset.
 
@@ -54,4 +54,5 @@ Stocks are traded on stock exchages such as NYSE and NASDAQ. As a keen investor,
 1. Stocks data retrived from 3 different sources using different methods and loaded into database tables. 
 2. Looking at the EDA results, Apple Inc is the top earning company on NASDAQ. 
 3. Apple Inc has the highest revenue. 
+4. There seems to be no coorelation between Assets and Liabilities. 
 
