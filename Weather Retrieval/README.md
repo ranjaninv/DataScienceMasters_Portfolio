@@ -1,12 +1,12 @@
 ## Weather Retrieval
 
-![image](https://user-images.githubusercontent.com/44445092/125156013-e3b28100-e128-11eb-8616-a9ec2f9ba832.png)
+![image](https://user-images.githubusercontent.com/44445092/125187736-acaaa100-e1f6-11eb-9415-cdeaeedffe96.png)
 
 ### Introduction
 
 This python application is designed to interacts with a webservice in order to obtain data. It prompts the user for their city or zip code and request weather forecast data from OpenWeatherMap. Application parses the json data and retrieves all the weather attributes and displays the information in a READABLE format to the user. This application uses API key to invoke webservice call to OpenWeatherMap. 
 
-### Application pre-requisites & outline
+### Application Pre-requisites & Outline
 
 - Python Application
 - Register with OpenWeatherMap and activate API key.
