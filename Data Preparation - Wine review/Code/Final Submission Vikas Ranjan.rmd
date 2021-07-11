@@ -1,0 +1,299 @@
+---
+title: "Final Project Submission"
+author: "Vikas Ranjan"
+date: "2/24/2020"
+output: 
+      pdf_document: default
+      word_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+# Wine Reviews 
+
+## Introduction
+
+Wine, a much loved alcoholic drink has been produced and enjoyed since thousands of years. It is typically made from Sented grapes. Different varieties of grapes and strains of yeasts produce different styles of wine.
+This dataset consists of details of 129971 wines reviews produced across the globe by different wineries. The dataset consists of country, wine description, designation, points, price, province, region_1, region_2, taster_name, taster_twitter_handle, title, variety, winery. We would be looking at various aspects of this data to uncover some insights. 
+
+* Dataset - [Wine Reviews](https://www.kaggle.com/zynicide/wine-reviews)
+
+## Problem statements
+
+Determine which countries/region produces best wines? 
+Determine which wineries produces best wines?
+Determine which countries/region produces costly wines?
+Determine which countries/region produces economical wines?
+Determine which countries/region produces economical and high quality wines?
+Determine which states are producing most wines?
+Determine which countries are producing best and worst wines?
+Establish corelation between a price of wines and points scored by the wine?
+
+## Summarize how you addressed this problem statement (the data used and the methodology employed).
+
+First step of the process was to analyse the data and understand what all data fields were consistent and relevent to the questions I was looking to answer. I removed the first column which was just the sequential number and non relevent to data analysis. I retrieved the percentage of missing data per column and found that region_2 is missing for more than 50% of the observations. Therefore I'll not be using this column for analysis and removed it from dataset. For missing price, I applied mean value which is 35 in this case. To make the dataset consistent, removed 63 observations which had country and province as a NA and removed 1 observation which had variety as a NA. For missing region_1, applied "ALL". All these steps helped to get a clean, relevant and consistent dataset. With clean dataset in hand, I created various plots based on my questions. Also, did perform correlation between price and points. 
+
+## Summarize the interesting insights that your analysis provided.
+
+* US, France, Italy, Portugal, Australia, Germany, Spain and Austria are the best wine producing counties based on count of wines scoring more than 96 points with US topping the list.
+* France by far produces the costliest wines in the world. 
+* US produces most economical wines. 
+* US and Protugal are top 2 countries producing highly rated economical wines. 
+* California, Washington, Bordeaux and Tuscany are most wine producing regions, with california topping the list. 
+* Austrian wines have the best mean scores and Chile has the lowest mean scores.
+* Price and points have a strong positive correlation.
+
+## Summarize the implications to the consumer (target audience) of your analysis.
+
+If you are wine lover and don't mind spending big bucks, French wines are to choose from. Otherwise, US wines are a good fit with higher point scores and affordable prices. 
+Similar analogy would apply from business side. If a business/retailer serves upscale customers, they would probably source French wines otherwise US or Portugal wines.
+
+## Discuss the limitations of your analysis and how you, or someone else, could improve or build on it.
+
+I would have loved to build a predictive algorithm however, I felt that it would have been more accurate and effective if I had more varibles such as age of wine, type of grapes, climate of the region, complexity, balance, etc. 
+
+
+# R scripts to cleanup data and perform analysis 
+
+```{r echo = FALSE, message=FALSE, warning=FALSE}
+
+# Set Working Directory 
+setwd("C:/Users/F6PDP2A/Downloads")
+
+# Load libraries 
+library(knitr)
+library(dplyr)
+library(tidyverse)
+library("GGally")
+
+# Load the csv file  
+wineRawData <- read.csv("C:/Users/F6PDP2A/Downloads/winemag-data-130k-v2.csv", na.strings="", stringsAsFactors=FALSE)
+```
+
+* **Structure of wineRawData Dataframe:**
+```{r echo=FALSE}
+str(wineRawData)
+```
+
+### Data cleanup
+
+1. 1st column is just the sequential number which is non relevent to data analysis, therefore removing it.
+
+```{r}
+wineRawData1 = wineRawData %>%  select(-X)
+```
+
+2. Find the columns with missing values:
+
+* Following are the columns with missing data:**
+```{r}
+colnames(wineRawData1)[apply(wineRawData1, 02, anyNA)]
+```
+
+3. Retrieve the percentage of missing data per column:
+
+```{r}
+missing_data = wineRawData1 %>%
+    map_df(function(x) sum(is.na(x))) %>%
+    gather(feature, num_nulls)%>%
+    arrange(desc(num_nulls))%>%
+    mutate(percent_missing = num_nulls/nrow(wineRawData1)*100)
+missing_data
+```
+
+4. Looking at the above statistics, region_2 is missing for more than 50% of the observations. Therefore we will not be using this column for analysis and can be dropped.
+
+```{r}
+# Remove region_2   
+wineRawData2 = wineRawData1 %>%  select(-region_2)
+```
+
+
+5. For missing price, we will be applying mean value. 
+
+The mean price of wines is coming as 35.36. So we will apply 35 to observations where price is missing. 
+
+```{r echo=FALSE}
+wineRawData2 %>% summarise(avgPrice = mean(price, na.rm = TRUE))
+wineRawData2$price <- wineRawData2$price %>% replace_na((price = 35))
+```
+
+6. We will be removing 63 observations which have country and province as a NA.
+
+```{r}
+wineRawData3 <- subset(wineRawData2, ((!is.na(wineRawData2$province))|(!is.na(wineRawData2$country))))
+```
+
+7. We will be removing 1 observation which has variety as a NA.
+
+```{r echo=FALSE}
+wineDataClean <- subset(wineRawData3, (!is.na(wineRawData3$variety)))
+str(wineDataClean)
+```
+
+8. For missing region_1, we will be applying "ALL". 
+
+```{r include = FALSE}
+wineDataClean$region_1 %>% replace_na("All")
+```
+
+#### Structure of the clean data frame
+
+```{r}
+str(wineDataClean)
+```
+
+### Glimpse of the clean dataset.
+
+```{r}
+glimpse(wineDataClean)
+```
+
+### Best wine producing countries (points greater than 96):
+
+```{r}
+CountryWiseWines <- wineDataClean %>%
+	filter(points > 96) %>%
+	group_by(country)%>%
+	summarise(n = n()) %>%
+	arrange(desc(n)) %>%
+	head(n = 8) %>%    
+    ggplot(aes(x = reorder(country,n), y = n)) +
+    geom_bar(stat='identity',colour="white", fill = c("blue")) +
+    labs(x = 'Country', y = 'Count', title = 'Best Wine Producing Country based on Points') + coord_flip() +  theme_bw()
+
+CountryWiseWines
+```    
+    
+### Countries producing costly wines:
+
+```{r}
+Costlywines <- wineDataClean %>%
+    arrange(desc(price)) %>%
+    head(n = 30)%>%
+    group_by(country)%>%
+    summarise(n = n())%>%
+    arrange(desc(n)) %>%    
+    ggplot(aes(x =reorder(country,n), y = n)) +
+    geom_bar(stat="identity",colour="white", fill = c("red")) +
+    labs(x = 'Country', y = 'Count', title = 'Which Country Makes Coslty Wines') + coord_flip() + theme_bw()
+
+Costlywines
+```    
+    
+### Countries producing Economical wines:    
+
+```{r}
+EcoWines <- wineDataClean %>%
+    arrange(price) %>%
+    head(n = 30)%>%
+    group_by(country)%>%
+    summarise(n = n())%>%
+    arrange(desc(n))%>%    
+    ggplot(aes(x =reorder(country,n), y =  n )) +
+    geom_bar(stat='identity',colour="white", fill = c("blue")) +
+    labs(x = 'Country', y = 'Count ', title = 'Countries Producing Economic wines') + coord_flip() + theme_bw()
+
+EcoWines    
+```
+
+### Countries producing Economical and high quality wines:
+
+```{r}
+GoodEcoWines <- wineDataClean%>%
+  filter(points > 90)%>%
+  arrange(price) %>%
+  head(n = 50) %>%
+  group_by(country) %>%
+  summarise(n = n())%>%
+  arrange(desc(n))%>%
+  ggplot(aes(x = reorder(country, n), y = n, fill = country))+
+  geom_bar(stat = 'identity')+
+  labs(x = 'Country', y ='Count', title ='Countries producing highly rated affordable wines')+
+  coord_flip()+
+  theme_bw()
+
+GoodEcoWines      
+
+```    
+
+### States producing most wines:
+
+```{r}
+Most_wine_producing_states <- wineDataClean %>%            
+  group_by(province, country)%>%
+  summarise(n = n()) %>%
+  arrange(desc(n)) %>%
+  head(n = 30)%>%
+  ggplot(aes(x = reorder(province, n), y = n, ))+
+  geom_bar(stat = 'identity')+
+  labs(x = 'States', y ='Count', title ='Most Wine Producing States')+
+  coord_flip()+
+  theme_minimal()
+  
+Most_wine_producing_states
+```
+
+### Countries with the Best and Worst Wine
+
+```{r}
+top_countries = wineDataClean %>%
+  group_by(country) %>%
+  count() %>%
+  filter(n>500)
+
+Best_Wines <- wineDataClean %>%
+  filter(country %in% top_countries$country) %>%
+  select(country,points) %>%
+  group_by(country) %>%
+  summarise(Mean_Score = mean(points)) %>%
+  arrange(desc(Mean_Score)) %>%
+  kable()
+
+Best_Wines
+```
+
+### Correlation:
+
+Based on spearman correlation, it seems like there is strong positive correlation between points and price. 
+
+```{r}
+subset_df <- wineDataClean[, 4:5]
+points_df <- subset_df$points
+price_df <- subset_df$price
+
+cor_result <- cor.test(price_df, points_df,  method = "spearman", exact=FALSE)
+cor_result
+
+ggpairs(subset_df) 
+```
+
+### Regression:
+
+```{r}
+ggplot(wineDataClean, aes(points, price)) + geom_point() + geom_smooth(method=lm, se = FALSE) + labs(x="Points", y="Price") 
+
+mod1 <- lm(price ~ points, data = wineDataClean)
+
+mod1
+summary(mod1)
+
+```
+
+  
+### Points distribution:  
+
+```{r}
+summary(wineDataClean$points)
+
+hist(wineDataClean$points, freq=FALSE, col="blue", xlab="Points", main=" Points Distribution", las=1)
+curve(dnorm(x, mean=mean(wineDataClean$points), sd=sd(wineDataClean$points)), add=TRUE, col="red")
+
+summary(wineDataClean$price)
+
+hist(wineDataClean$price, freq=FALSE, col="blue", xlab="Price", main=" Price Distribution", las=1)
+curve(dnorm(x, mean=mean(wineDataClean$price), sd=sd(wineDataClean$price)), add=TRUE, col="red")
+```
+  
+
