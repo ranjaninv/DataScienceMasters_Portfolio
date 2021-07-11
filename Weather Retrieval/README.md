@@ -1,6 +1,6 @@
 ## Weather Retrieval
 
-![image](https://user-images.githubusercontent.com/44445092/125187736-acaaa100-e1f6-11eb-9415-cdeaeedffe96.png)
+![image](https://user-images.githubusercontent.com/44445092/125156013-e3b28100-e128-11eb-8616-a9ec2f9ba832.png)
 
 ### Introduction
 
