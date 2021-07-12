@@ -60,4 +60,4 @@ This dataset is not a clean dataset. Therefore, in order to clean up the dataset
 5. California, Washington, Bordeaux and Tuscany are most wine producing regions, with california top-
 ping the list.
 6. Austrian wines have the best mean scores and Chile has the lowest mean scores.
-7. Price and points have a strong positive correlation.
+7. Price and points have a strong positive correlation. 
