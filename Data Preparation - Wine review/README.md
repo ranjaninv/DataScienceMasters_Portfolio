@@ -1,6 +1,6 @@
 ## Wine reviews - Data Preparation
 
-![Winery1](https://user-images.githubusercontent.com/44445092/125221602-0f02b080-e28e-11eb-8b57-9e27b12a841e.jpeg)
+![image](https://user-images.githubusercontent.com/44445092/125237220-f5239680-e2aa-11eb-9040-0352e75d3b5d.png)
 
 ### Introduction
 
