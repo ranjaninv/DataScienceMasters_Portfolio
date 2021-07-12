@@ -1,5 +1,7 @@
 ## Wine reviews - Data Preparation
 
+![Winery1](https://user-images.githubusercontent.com/44445092/125221602-0f02b080-e28e-11eb-8b57-9e27b12a841e.jpeg)
+
 ### Introduction
 
 Wine, a much loved alcoholic drink has been produced and enjoyed since thousands of years. It is typically made from Sented grapes. Different varieties of grapes and strains of yeasts produce different styles of wine. As part of this project, the objective was to identify a dataset with wine reviews, clean it up and gain some insights using data preparation and analysis with R. 
