@@ -1,0 +1,65 @@
+<html><head><style>body {
+   color: black;
+}
+</style></head><body><h2 id="wine-reviews-eda">Wine Reviews - EDA</h2>
+<p><img src="https://user-images.githubusercontent.com/44445092/125156013-e3b28100-e128-11eb-8616-a9ec2f9ba832.png" alt="image"></p>
+<h3 id="introduction">Introduction</h3>
+<p>Wine, a much loved alcoholic drink has been produced and enjoyed since thousands of years. It is typically made from fermented grapes. Different varieties of grapes and strains of yeasts produce different styles of wine. This dataset consists of details of 129971 wines reviews produced across the globe by different wineries. I performed EDA on the wine reviews dataset by analyzing the variables in the dataset, also performed statistical functions to uncover some insights from the dataset.</p>
+<h3 id="data-understanding">Data Understanding</h3>
+<ul>
+<li>Dataset link - <a href="https://www.kaggle.com/mlg-ulb/creditcardfraud">https://www.kaggle.com/mlg-ulb/creditcardfraud</a></li>
+<li>Wine reviews dataset has 14 columns and 129971 Rows.</li>
+</ul>
+<h3 id="data-cleanup">Data Cleanup</h3>
+<ul>
+<li><p>Below is the snapshot of missing data in the dataset:</p>
+<ul>
+<li>There are 9 columns that have missing values.</li>
+<li>There is 1 column having greater than 50% missing values.</li>
+<li>There is 1 column having greater than 40% missing values.</li>
+<li>There is 1 column having greater than 30% missing values.</li>
+<li>There are 4 columns having greater than 20% missing values. </li>
+<li>There are 5 columns having greater than 10% missing values.</li>
+</ul>
+</li>
+<li><p>There are duplicates in the description field, therefore we need to remove them.</p>
+</li>
+<li>First variable “&quot;Unnamed: 0” in the data frame is just the serial #, therefore it is safe to remove
+them as there is no benefit of it to provide insight about data.</li>
+<li>We also need to remove the region2 from data frame since majority of it is not having any value.</li>
+<li>We also need to null values from the dataframe.</li>
+<li>There are 47660 rows and 11 columns, after all the cleanup and removing all rows with null
+values.</li>
+</ul>
+<h3 id="eda-exploratory-data-analysis-">EDA (Exploratory Data Analysis)</h3>
+<ol>
+<li><p>Scatter Plot of price and points of the wines.</p>
+<p> <img width="473" alt="image" src="https://user-images.githubusercontent.com/44445092/125156744-b23bb480-e12c-11eb-8e8d-140adaaa8d59.png"></p>
+</li>
+<li><p>Histogram of wine scores/price and comparison of US and French wines.</p>
+<p> <img width="574" alt="image" src="https://user-images.githubusercontent.com/44445092/125156632-15791700-e12c-11eb-95fd-1a81d10b8fff.png"></p>
+</li>
+<li><p>Below histogram suggests that most of the US Wines are having a score of 91.</p>
+<p> <img width="580" alt="image" src="https://user-images.githubusercontent.com/44445092/125156785-ee6f1500-e12c-11eb-96fb-a8a23d58cbd2.png"></p>
+</li>
+<li><p>Below histogram suggests that most of the French wines are having a score of 88.5.</p>
+<p> <img width="594" alt="image" src="https://user-images.githubusercontent.com/44445092/125156813-0f376a80-e12d-11eb-8e02-d4d098010804.png"></p>
+</li>
+<li><p>PMF of wine scores.</p>
+<p> <img width="574" alt="image" src="https://user-images.githubusercontent.com/44445092/125156845-4148cc80-e12d-11eb-94c1-a2825d4e8f81.png"></p>
+</li>
+<li><p>CDF of price between US and French wines which have score greater than 90.</p>
+<p> <img width="561" alt="image" src="https://user-images.githubusercontent.com/44445092/125156894-866cfe80-e12d-11eb-94ff-7d82ea6bbf42.png"></p>
+</li>
+</ol>
+<h3 id="modeling-evaluation">Modeling &amp; Evaluation</h3>
+<ol>
+<li><p>Created a model to predict the price of the wine based on the score of the wine. And based on it, tried to predict what might be the price of a wine which has a score of 97.</p>
+<p> <img width="547" alt="image" src="https://user-images.githubusercontent.com/44445092/125156959-d2b83e80-e12d-11eb-9bcc-0a184fa05a49.png"></p>
+</li>
+</ol>
+<h3 id="conclusion">Conclusion</h3>
+<ul>
+<li>One of the biggest challenge I faced was that I only had 2 numeric variables (price and points) to play with.</li>
+</ul>
+</body></html>
