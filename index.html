@@ -167,7 +167,13 @@
 				<!-- Contact -->
 					<section id="contact" class="four">
 						<div class="container">
-
+							<script>
+        							function fun(){
+            								document.getElementById('name').value='';
+            								document.getElementById('email').value='';
+            								document.getElementById('message').value='';
+            								}
+    							</script>
 							<header>
 								<h2>Contact</h2>
 							</header>
@@ -182,7 +188,7 @@
 										<textarea name="message" placeholder="Message"></textarea>
 									</div>
 									<div class="col-12">
-										<input type="submit" value="Send Message" />
+										<input onclick="fun()" type="submit" value="Send Message" />
 									</div>
 								</div>
 							</form>
