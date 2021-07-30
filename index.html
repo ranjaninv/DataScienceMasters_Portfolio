@@ -174,15 +174,7 @@
 							<p>If you would like to connect, please leave a message below!</p>
 
 							<form method="post" action="https://formspree.io/f/xoqynjvd">
-								<div class="row">
-									<script>
-        									function fun(){
-            										document.getElementById('name').value='';
-            										document.getElementById('email').value='';
-            										document.getElementById('message').value='';
-            									}
-    									</script>
-									
+								<div class="row">									
 									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
 									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
 									<div class="col-12">
@@ -211,6 +203,13 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+        			function fun(){
+            				document.getElementById('name').value='';
+					document.getElementById('email').value='';
+            				document.getElementById('message').value='';
+            				}
+    			</script>		
 
 	</body>
 </html>
