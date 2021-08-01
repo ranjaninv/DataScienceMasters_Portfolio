@@ -8,7 +8,7 @@ Wine, a much loved alcoholic drink has been produced and enjoyed since thousands
 
 ### Data Understanding
 
-* Dataset - [Wine Reviews](https://www.kaggle.com/zynicide/wine-reviews)
+* [Explore Wine Reviews Dataset in Kaggle](https://www.kaggle.com/zynicide/wine-reviews)
 
 This dataset consists of details of 129971 wines reviews produced across the globe by different wineries. The dataset consists of country, wine description, designation, points, price, province, region_1, region_2, taster_name, taster_twitter_handle, title, variety, winery. We would be looking at various aspects of this data to uncover some insights. 
 
