@@ -10,9 +10,10 @@ As part of this case study, I will be applying data mining and visualization tec
 
 ### Data Understanding
 
-1. Source - https://www.kaggle.com/ekrembayar/fifa-21-complete-player-datasets
-2. The data set has players data for 2021 season and contains 107 columns and 17125 rows.
-3. This data set has players data for 2021 season and contains 107 columns and 17125 rows. The data describes players attributes like name, height, weight, age, club association, nationality, playing position, wage, contract details, and various performance data.
+[Explore Dataset in Kaggle](https://www.kaggle.com/ekrembayar/fifa-21-complete-player-datasets)
+
+- The data set has players data for 2021 season and contains 107 columns and 17125 rows.
+- This data set has players data for 2021 season and contains 107 columns and 17125 rows. The data describes players attributes like name, height, weight, age, club association, nationality, playing position, wage, contract details, and various performance data.
 
 ### EDA (Exploratory Data Analysis)
 
