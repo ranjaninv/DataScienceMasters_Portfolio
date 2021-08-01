@@ -1,14 +1,17 @@
-## YouTube Videos - Likes and Views Prediction
+## Hotel Booking Analysis & Cancellation Prediction
 
-![image](https://user-images.githubusercontent.com/44445092/125154149-43575f00-e11e-11eb-88db-c14d25fe825a.png)
+![image](https://user-images.githubusercontent.com/44445092/127782200-a2c2a1da-62c3-4d4b-bdf5-bddfba4866a6.png)
 
 ### Introduction
 
-YouTube is an online video sharing and social media platform. It is the world’s second largest search engine and second most visited site after Google. In fact, 37% of all mobile internet traffic belongs to YouTube. It is the second most popular social media platform with almost 1.9bn users. YouTube has not only become a great alternative to traditional media but with billions of hours of content and countless number of corporations and groups, YouTube has also transformed into a tool for social impact. I looked for the trends in the data related to the uploaded videos US and see how various attributes are correlated. I also performed basic text analysis on ‘Description’ of the videos and build a word cloud to see which are most used words in the description of the uploaded videos. The idea is to build a model to predict the number of likes a video might get and another model to predict the number of views an uploaded video might get. This analysis and modeling are intended to help an influencer or content creator access their efforts effectively.
+  The hotel industry is subdivision of the hospitality industry that specializes in providing customers with lodging services. There are a variety of hotel types that typically can be categorized by size, function, service, and cost. Levels of service can usually be split into three options namely limited-service, mid-range service, and full-service. Booking of hotel room are done through various methods such as travel booking websites (such as Priceline, Kayak, Expedia, Booking.com), directly through hotel’s website, or various travel agents. Being an avid traveler, I choose to pick up a dataset in hotel bookings. Booking cancellations have significant impact on demand-management decisions in the hospitality industry. 
+
+  Hotel industry faces a very high cancellation rate. With a global average of almost 40% cancellation rate, this trend produces a very negative impact on hotel revenue and distribution management strategies. To mitigate the effect of cancellations, hotels implement rigid cancellation policies and overbooking tactics, which in turn can have a negative impact on revenue and on the hotel reputation. To make things worse, during this covid crisis, hotel and hospitality industry has taken a massive hit in terms of less bookings and even more cancellations. The impact of COVID-19 on the travel industry so far has been multiple times worse than 9/11. Hotels were one of the first industries affected by the pandemic and it will be one of the last to recover. Therefore, it is more than ever necessary that using data science and ML, potential booking cancellations are identified in advance to allow hotel management allocate resources and plan accordingly. The aim of this project to not only find patterns and key insights related to hotel booking and cancellations but also to develop a few models for predicting a cancellation on a hotel room booking.
+
 
 ### Data Understanding
 
-- Dataset link - https://www.kaggle.com/datasnaek/youtube-new
+- Dataset link - https://www.kaggle.com/jessemostipak/hotel-booking-demand. 
 - The dataset contains details of the videos uploaded on YouTube in US during 2018 and 2019.
 - This dataset includes 40950 rows and 16 feature variables where each row corresponds to a unique video.
   
