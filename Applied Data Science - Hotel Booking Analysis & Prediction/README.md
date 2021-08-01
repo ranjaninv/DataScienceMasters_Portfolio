@@ -49,8 +49,6 @@
 
     <img width="468" alt="image" src="https://user-images.githubusercontent.com/44445092/127787084-97a5cc62-e16a-43ef-bb9a-24db2f5bb503.png">
 
-    <img width="640" alt="image" src="https://user-images.githubusercontent.com/44445092/125154807-8d8e0f80-e121-11eb-93d6-eaa7d51042b8.png">
-
 9. Heatmap of the correlation.
 
     <img width="468" alt="image" src="https://user-images.githubusercontent.com/44445092/127787133-4c2813a8-809f-4422-a7e3-7b7f95322e2c.png">
