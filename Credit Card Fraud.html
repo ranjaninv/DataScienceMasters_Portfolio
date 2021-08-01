@@ -1,42 +1,48 @@
-<html><head><style>body {
-   color: black;
-}
-</style></head><body><h2 id="credit-card-fraud-prediction">Credit Card Fraud Prediction</h2>
-<p><img src="https://user-images.githubusercontent.com/44445092/124867326-80d3b500-df83-11eb-8019-317e68c0e7c1.jpeg" alt="image"></p>
-<h3 id="introduction">Introduction</h3>
-<p>Credit cards and electronic payments make overall functioning in a global marketplace much easier. Each year financial institutions lost a chunk of money as a result of credit card fraud. In year 2018, a total of $24.26 Billion was lost due to payment card fraud across the globe and United States being the most fraud prone country. Credit card fraud was ranked number one type of identity theft fraud. Credit card fraud increased by 18.4 percent in 2018 and is still climbing. Credit card fraud includes fraudulent transactions on a credit card or debit card. One of the challenges behind fraud detection is that frauds are far less common as compared to legal transactions. After initial struggle to find a good dataset, came across the dataset on Kaggle which was considerably good to be able to build and train our model. As part of this project, built a few models for fraud detection using anonymized credit card transaction data.</p>
-<h3 id="data-understanding">Data Understanding</h3>
-<p>Dataset link - <a href="https://www.kaggle.com/mlg-ulb/creditcardfraud">https://www.kaggle.com/mlg-ulb/creditcardfraud</a></p>
-<p>The dataset contains transactions made by credit cards in September 2013 by European cardholders. This dataset presents transactions that occurred in two days, where we have 492 frauds out of 284,807 transactions. The dataset is highly unbalanced, the positive class (frauds) account for 0.172% of all transactions. It contains only numerical input variables which are the result of a PCA transformation.</p>
-<p>There are 29 decimal fields and 2 integer fields in the dataset.</p>
-<p>The source dataset is clean and contains only numerical input variables which are the result of a PCA transformation. Hence, there wasn’t much scope with regards to data cleaning and preparation.</p>
-<h3 id="eda-exploratory-data-analysis-">EDA (Exploratory Data Analysis)</h3>
-<ol>
-<li><p>Distribution of fraudulent transactions amounts</p>
-<p> <img width="412" alt="image" src="https://user-images.githubusercontent.com/44445092/124867647-1bcc8f00-df84-11eb-811f-a02235b29dce.png"></p>
-</li>
-<li><p>Distribution of transaction times</p>
-<p> <img width="557" alt="image" src="https://user-images.githubusercontent.com/44445092/124867696-2ab34180-df84-11eb-8817-c997c49d9f96.png"></p>
-</li>
-<li><p>Fraud vs Non-Fraud</p>
-<p> <img width="433" alt="image" src="https://user-images.githubusercontent.com/44445092/124867723-37379a00-df84-11eb-9db9-6cd02bd9fdd0.png"></p>
-</li>
-</ol>
-<h3 id="modeling-evaluation">Modeling &amp; Evaluation</h3>
-<ol>
-<li>Target variable is &quot;Class&quot;, therefore classification model will be applied. </li>
-<li>In order to overcome the challenges with imbalanced dataset, we applied oversampling technique called SMOTE. </li>
-<li>Identified all the key features using SelectKBest</li>
-<li><p>Compared the models based roc_auc score. </p>
-<p> <img width="218" alt="image" src="https://user-images.githubusercontent.com/44445092/124868006-bfb63a80-df84-11eb-843c-85512e616701.png"></p>
-</li>
-</ol>
-<h3 id="conclusion">Conclusion</h3>
-<ol>
-<li>As proven by SelectKBest, transaction time does not have any influence on prediction of fraudulent transaction.</li>
-<li>SMOTE oversampling technique helped overcome the Imbalanced datasets challenge.</li>
-<li>Using Random Forest Model our model will correctly predict if the transaction was fraudulent or not 98.528% of the time.</li>
-<li>Logistic Regression Model our model will correctly predict if the transaction was fraudulent or not 98.032% of the time.</li>
-<li>Random forest model has less false positives than logistic regression making it a better model.</li>
-</ol>
-</body></html>
+Credit Card Fraud Prediction
+
+image
+
+Introduction
+
+Credit cards and electronic payments make overall functioning in a global marketplace much easier. Each year financial institutions lost a chunk of money as a result of credit card fraud. In year 2018, a total of $24.26 Billion was lost due to payment card fraud across the globe and United States being the most fraud prone country. Credit card fraud was ranked number one type of identity theft fraud. Credit card fraud increased by 18.4 percent in 2018 and is still climbing. Credit card fraud includes fraudulent transactions on a credit card or debit card. One of the challenges behind fraud detection is that frauds are far less common as compared to legal transactions. After initial struggle to find a good dataset, came across the dataset on Kaggle which was considerably good to be able to build and train our model. As part of this project, built a few models for fraud detection using anonymized credit card transaction data.
+
+Data Understanding
+
+Explore Dataset in Kaggle
+
+The dataset contains transactions made by credit cards in September 2013 by European cardholders. This dataset presents transactions that occurred in two days, where we have 492 frauds out of 284,807 transactions. The dataset is highly unbalanced, the positive class (frauds) account for 0.172% of all transactions. It contains only numerical input variables which are the result of a PCA transformation.
+
+There are 29 decimal fields and 2 integer fields in the dataset.
+
+The source dataset is clean and contains only numerical input variables which are the result of a PCA transformation. Hence, there wasn’t much scope with regards to data cleaning and preparation.
+
+EDA (Exploratory Data Analysis)
+
+Distribution of the fraudulent transactions amounts
+
+image
+
+Distribution of transaction times
+
+image
+
+Fraud vs Non-Fraud
+
+image
+
+Modeling & Evaluation
+
+Target variable is "Class", therefore classification model will be applied.
+In order to overcome the challenges with imbalanced dataset, we applied oversampling technique called SMOTE.
+Identified all the key features using SelectKBest
+Compared the models based roc_auc score.
+
+image
+
+Conclusion
+
+As proven by SelectKBest, transaction time does not have any influence on prediction of fraudulent transaction.
+SMOTE oversampling technique helped overcome the Imbalanced datasets challenge.
+Using Random Forest Model our model will correctly predict if the transaction was fraudulent or not 98.528% of the time.
+Logistic Regression Model our model will correctly predict if the transaction was fraudulent or not 98.032% of the time.
+Random forest model has less false positives than logistic regression making it a better model.
