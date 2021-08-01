@@ -55,9 +55,6 @@
 
     <img width="468" alt="image" src="https://user-images.githubusercontent.com/44445092/127787133-4c2813a8-809f-4422-a7e3-7b7f95322e2c.png">
 
-    <img width="213" alt="image" src="https://user-images.githubusercontent.com/44445092/127787135-a8da6c21-b739-4a98-a05e-7c8b1bdd6408.png">
-
-
 
 ### Modeling & Evaluation
 
