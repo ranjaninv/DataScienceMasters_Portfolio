@@ -11,7 +11,7 @@
 
 ### Data Understanding
 
-- Dataset link - https://www.kaggle.com/jessemostipak/hotel-booking-demand. 
+- [Explore Dataset in Kaggle](https://www.kaggle.com/jessemostipak/hotel-booking-demand)
 - The dataset contains details of the videos uploaded on YouTube in US during 2018 and 2019.
 - This dataset includes 40950 rows and 16 feature variables where each row corresponds to a unique video.
   
