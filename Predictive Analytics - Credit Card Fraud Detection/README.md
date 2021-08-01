@@ -18,7 +18,7 @@ The source dataset is clean and contains only numerical input variables which ar
 
 ### EDA (Exploratory Data Analysis)
 
-1. Distribution of fraudulent transactions amounts
+1. Distribution of the fraudulent transactions amounts
 
     <img width="412" alt="image" src="https://user-images.githubusercontent.com/44445092/124867647-1bcc8f00-df84-11eb-811f-a02235b29dce.png">
 
