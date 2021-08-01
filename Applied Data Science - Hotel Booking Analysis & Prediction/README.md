@@ -12,22 +12,22 @@
 ### Data Understanding
 
 - [Explore Dataset in Kaggle](https://www.kaggle.com/jessemostipak/hotel-booking-demand)
-- The dataset contains details of the videos uploaded on YouTube in US during 2018 and 2019.
-- This dataset includes 40950 rows and 16 feature variables where each row corresponds to a unique video.
+- This dataset includes 119391 rows and 32 feature variables. 
+- This data set contains booking information for a city hotel and a resort hotel, and also includes information such as when the booking was made, length of stay, the number of adults, children, and/or babies, and the number of available parking spaces, among other things.
   
 ### EDA (Exploratory Data Analysis)
 
-1. Below chart shows the days of the week which had the largest numbers of trending videos. There is a trend that on weekends, there are lesser videos being uploaded.
+1. Below plot shows the comparison of cancellation of bookings for Resort Hotel and City Hotel.
 
-    <img width="697" alt="image" src="https://user-images.githubusercontent.com/44445092/125154396-73ebc880-e11f-11eb-8f7f-3da1b386d406.png">
+    <img width="257" alt="image" src="https://user-images.githubusercontent.com/44445092/127786351-6808d6a9-d38c-46bc-abf8-7d2b6db94b50.png">
  
-2. Data and plot shows the trend that most of the videos are being uploaded on the weekdays, and over the weekends there is a significant drop in videos being published.
+2. Below pie chart shows the distribution of the Reservation Status.
 
-    <img width="544" alt="image" src="https://user-images.githubusercontent.com/44445092/125154498-e492e500-e11f-11eb-8c51-1c7dd411182f.png">
+    <img width="468" alt="image" src="https://user-images.githubusercontent.com/44445092/127786370-68de63cb-07ca-4634-8ffb-b42cb143593a.png">
 
-3. Below plot shows the trend that most of the videos are being uploaded between 14:00 and 16:00, highest number of videos being uploaded are around 16:00.
+3. Below plot shows the distribution and highest concentration points.
   
-    <img width="543" alt="image" src="https://user-images.githubusercontent.com/44445092/125154619-74d12a00-e120-11eb-86ce-9fbf27d17d1b.png">
+    <img width="354" alt="image" src="https://user-images.githubusercontent.com/44445092/127786381-f98f5477-5d48-4c5d-92ec-59e0344e3f0e.png">
     
 4. Entertainment category contains the largest number of trending videos with around 10,000 videos, second is Music category with around 6,200 videos, followed by How to & Style category with around 4,100 videos.
 
