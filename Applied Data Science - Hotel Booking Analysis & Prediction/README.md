@@ -29,56 +29,71 @@
   
     <img width="354" alt="image" src="https://user-images.githubusercontent.com/44445092/127786381-f98f5477-5d48-4c5d-92ec-59e0344e3f0e.png">
     
-4. Entertainment category contains the largest number of trending videos with around 10,000 videos, second is Music category with around 6,200 videos, followed by How to & Style category with around 4,100 videos.
+4. Below plot shows the distribution of bookings over the weeks of the year.
 
-    <img width="599" alt="image" src="https://user-images.githubusercontent.com/44445092/125154654-a2b66e80-e120-11eb-83a1-7dec99a6a531.png">
+    <img width="422" alt="image" src="https://user-images.githubusercontent.com/44445092/127786885-18901571-9b4f-40b6-a1b9-33565070c39e.png">
 
-5. Music and entertainment videos have the most number of likes.
+5. Below plot the demonstrates the distribution of average daily rates for different room types.
 
-    <img width="595" alt="image" src="https://user-images.githubusercontent.com/44445092/125154684-cd082c00-e120-11eb-819a-dfb9a9ed599c.png">
+    <img width="468" alt="image" src="https://user-images.githubusercontent.com/44445092/127786902-68e3e7b5-aaf8-4bc3-967e-7c9432093a9f.png">
 
-6. ESPN seem to have the greatest number of videos, followed by late night shows, mostly in entertainment category.
+6. Below plot shows the comparison of booking price of room over a period of time.
 
-    <img width="809" alt="image" src="https://user-images.githubusercontent.com/44445092/125154713-ff198e00-e120-11eb-83c4-4d617419a231.png">
+    <img width="468" alt="image" src="https://user-images.githubusercontent.com/44445092/127787007-dcf8ac1e-e5dc-4840-8719-1cc244c0c57f.png">
 
-7. There seems to be positive correlation between the number of views and the no of likes of a video.
+7. Below plot shows the comparison of total guests per month.
 
-    <img width="502" alt="image" src="https://user-images.githubusercontent.com/44445092/125154775-6a636000-e121-11eb-8a46-a0236143706b.png">
+    <img width="468" alt="image" src="https://user-images.githubusercontent.com/44445092/127787016-2d312a5c-58ba-45cb-9525-90a8bf81a03d.png">
 
-8. Correlation matrix between views, likes, dislikes and number of comments on the video.
+8. Plot showing distribution of Market Segment by different Hotel Types.
+
+    <img width="468" alt="image" src="https://user-images.githubusercontent.com/44445092/127787084-97a5cc62-e16a-43ef-bb9a-24db2f5bb503.png">
 
     <img width="640" alt="image" src="https://user-images.githubusercontent.com/44445092/125154807-8d8e0f80-e121-11eb-93d6-eaa7d51042b8.png">
 
-    <img width="430" alt="image" src="https://user-images.githubusercontent.com/44445092/125154836-b2828280-e121-11eb-990a-de0cb54b8161.png">
+9. Heatmap of the correlation.
 
-9. Word cloud for the Description field, showing the most used words in the description.
+    <img width="468" alt="image" src="https://user-images.githubusercontent.com/44445092/127787133-4c2813a8-809f-4422-a7e3-7b7f95322e2c.png">
 
-    <img width="417" alt="image" src="https://user-images.githubusercontent.com/44445092/125154863-cd54f700-e121-11eb-8251-bd53f0bbb7f0.png">
+    <img width="213" alt="image" src="https://user-images.githubusercontent.com/44445092/127787135-a8da6c21-b739-4a98-a05e-7c8b1bdd6408.png">
+
 
 
 ### Modeling & Evaluation
 
-1. As part of modeling, the intent is to build a model to predict number of likes and number of views on a video. Since both these values are continuous variables, therefore regression models are to be applied.
+1. As part of modeling, the intent is to build a model to predict if a hotel booking will be cancelled. Since booking cancellation is a categorical variables, therefore classification models are to be applied.
 
-2. Results of linear Regression to predict number of likes. 
+2. Results of Random Forest Classifier. 
 
-    <img width="644" alt="image" src="https://user-images.githubusercontent.com/44445092/125155036-e6aa7300-e122-11eb-8f14-3e4e54238de2.png">
+    <img width="331" alt="image" src="https://user-images.githubusercontent.com/44445092/127787308-2ee74d7b-e2ad-441f-bd79-be0b9eed2eb5.png">
+    
+    <img width="225" alt="image" src="https://user-images.githubusercontent.com/44445092/127787312-07173c72-d6f9-471b-a314-a8912c5e7991.png">
 
-3. Results of linear Regression to predict number of views. 
+3. Results of Logistic Regression. 
 
-    <img width="640" alt="image" src="https://user-images.githubusercontent.com/44445092/125155085-36893a00-e123-11eb-98e1-6e384e604dcc.png">
+    <img width="330" alt="image" src="https://user-images.githubusercontent.com/44445092/127787330-c3e9f9f1-0ab1-46ee-bd4b-ee9554038035.png">
 
-4. Linear regression results shows that r-squared score of 0.76 which is not accurate enough. 
+    <img width="225" alt="image" src="https://user-images.githubusercontent.com/44445092/127787335-84d562ee-c790-45ee-b900-c714fc90e8cd.png">
 
-5. Random Forest Regressor model to predict number of views has a mean absolute error (MAE) of 220924 and score of 0.985.
+4. Results of Decision Tree Classification model. 
 
-    <img width="382" alt="image" src="https://user-images.githubusercontent.com/44445092/125155157-98e23a80-e123-11eb-8ff8-c6fc6c7094bc.png">
+    <img width="305" alt="image" src="https://user-images.githubusercontent.com/44445092/127787362-9bb53a6b-890b-418f-bc03-0574764d9220.png">
+
+    <img width="225" alt="image" src="https://user-images.githubusercontent.com/44445092/127787364-14b015bf-29a8-4c0c-8cb7-1243788d6fe0.png">         
+
+5. Results of KNN Classification model.
+
+    <img width="325" alt="image" src="https://user-images.githubusercontent.com/44445092/127787397-b5048a0a-e739-4f7a-90a7-646fcf29fff6.png">
+
+    <img width="225" alt="image" src="https://user-images.githubusercontent.com/44445092/127787402-4a601fb3-0846-4c4c-bc90-2490add0d3e0.png">
 
 ### Conclusion
 
-1. Linear Regression is a good fit when modeling to predict number of likes.
-2. To predict the number of views, Random Forest Regressor has better score than linear regression. 
-3. Positive correlation between the number of views and the number of likes of a video. Like wise is the case with the number of views and the no of comments on a video.
-4. The data set I worked with could have had few more attributes such comment text, length of the video, number of subscribers, etc. 
+1. Booking cancellations has strongest positive correlation with lead time and average daily rates. Therefore, hotels should look at this and try to adjust their pricing and cancellation strategies accordingly. 
+2. Random oversampling technique helped overcome the Imbalanced datasets challenge. 
+3. Using Random Forest Model our model will correctly predict if a hotel room booking will be cancelled or not 93.78% of the time.
+4. Decision Tree Model our model will correctly predict if a hotel room booking will be cancelled or not 92.91% of the time.
+5.Random forest model has less false positives than Decision Tree making it a better model.
+
 
 
