@@ -8,7 +8,7 @@ YouTube is an online video sharing and social media platform. It is the world’
 
 ### Data Understanding
 
-- Dataset link - https://www.kaggle.com/datasnaek/youtube-new
+[Explore Dataset in Kaggle](https://www.kaggle.com/datasnaek/youtube-new)
 - The dataset contains details of the videos uploaded on YouTube in US during 2018 and 2019.
 - This dataset includes 40950 rows and 16 feature variables where each row corresponds to a unique video.
   
