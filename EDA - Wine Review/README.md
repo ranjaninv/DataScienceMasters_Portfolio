@@ -8,7 +8,7 @@ Wine, a much loved alcoholic drink has been produced and enjoyed since thousands
 
 ### Data Understanding
 
-- Dataset link - https://www.kaggle.com/mlg-ulb/creditcardfraud
+- [Explore Wine Reviews Dataset in Kaggle](https://www.kaggle.com/zynicide/wine-reviews)
 - Wine reviews dataset has 14 columns and 129971 Rows.
 
 ### Data Cleanup
