@@ -4,7 +4,7 @@
 
 ### Introduction
 
-This python application is designed to interacts with a webservice in order to obtain data. It prompts the user for their city or zip code and request weather forecast data from OpenWeatherMap. Application parses the json data and retrieves all the weather attributes and displays the information in a READABLE format to the user. This application uses API key to invoke webservice call to OpenWeatherMap. 
+This python application is designed to interacts with a webservice in order to retrieve weather data. It prompts the user for their city or zip code and request weather forecast data from OpenWeatherMap. Application parses the json data and retrieves all the weather attributes and displays the information in a READABLE format to the user. This application uses API key to invoke webservice call to OpenWeatherMap. 
 
 ### Application Pre-requisites & Outline
 
