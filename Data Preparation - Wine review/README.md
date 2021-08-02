@@ -12,7 +12,7 @@ Wine, a much loved alcoholic drink has been produced and enjoyed since thousands
 
 - This dataset consists of details of 129971 wines reviews produced across the globe by different wineries. The dataset consists of country, wine description, designation, points, price, province, region_1, region_2, taster_name, taster_twitter_handle, title, variety, winery. We would be looking at various aspects of this data to uncover some insights. 
 
-- This dataset is not a clean dataset. Therefore, in order to clean up the dataset had to take various steps such as removing NAs, removing redundant fields, removing fields which had a lot of missing data, updating mean/median values to numeric fields which have missing data.
+- This dataset is not a clean dataset. Therefore, in order to clean up the dataset had to take various steps such as removing NAs, removing redundant fields, removing fields which had a lot of missing data, updating mean/median values to numeric fields which all have missing data.
 
 ### EDA (Exploratory Data Analysis)
 
