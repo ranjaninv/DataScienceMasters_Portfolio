@@ -27,7 +27,6 @@ Stocks are traded on stock exchages such as NYSE and NASDAQ. As a keen investor,
 
     ![image](https://user-images.githubusercontent.com/44445092/125202382-fe741b00-e238-11eb-97ab-07d43fabbf79.png)
 
- 
 2. Top 10 companies when by total revenue.
 
     ![image](https://user-images.githubusercontent.com/44445092/125202536-9e31a900-e239-11eb-9d91-5e8ce3bfa016.png)
