@@ -1,6 +1,6 @@
 ## Heart Disease Prediction
 
-![image](https://user-images.githubusercontent.com/44445092/128667156-3b9752b8-6882-4b90-b347-70727859628f.png)
+![image](https://user-images.githubusercontent.com/44445092/128669072-fb13563a-4d26-4921-a893-c8a8e1c61d32.png)
 
 ### Introduction
 
