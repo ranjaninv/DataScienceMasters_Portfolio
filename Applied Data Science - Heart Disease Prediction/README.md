@@ -112,10 +112,10 @@
 
 ### Conclusion
 
-•	The strongest positive correlations of TenYearCHD are with age and sysBP.
-•	Performed Standardization technique to scale the data before running it through the ML algorithms. 
-•	Since the training dataset was moderately imbalanced, applied Random oversampling technique to overcome the imbalanced datasets challenge. 
-•	Based on the accuracy of the implemented classification models to predict TenYearCHD, SVM classification model shows highest accuracy followed by Random Forest classification model.
+1.  The strongest positive correlations of TenYearCHD are with age and sysBP.
+2.  Performed Standardization technique to scale the data before running it through the ML algorithms. 
+3.  Since the training dataset was moderately imbalanced, applied Random oversampling technique to overcome the imbalanced datasets challenge. 
+4.  Based on the accuracy of the implemented classification models to predict TenYearCHD, SVM classification model shows highest accuracy followed by Random Forest classification model.
 
 
 
