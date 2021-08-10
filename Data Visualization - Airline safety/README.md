@@ -9,7 +9,6 @@ Air transport (both passenger and cargo) is a key enabler to achieving economic 
 As part of this project, various data visualization techniques are implemented to build Dasboard, Infographics, executive summary to convey that airlines are still the safest way to travel. The news and media outlets have been bombarding the public with reports and figures about the trends of airline safety and that things are not looking good. What was previously thought as the safest way to travel, especially when compared to automobiles, is now being presented as one of the most dangerous to the public. 
 The visualizations are built on Tableau, a powerful visual analytics platform. The data is gathered from various govt and public sources and are loaded into Tableau to perform analysis & build visualizations.
 
-<img width="4457" alt="image" src="https://user-images.githubusercontent.com/44445092/128801600-67871f27-de07-4d56-bd3a-615dc544882e.png">
 
 ### Data Sources
 
@@ -30,7 +29,7 @@ The visualizations are built on Tableau, a powerful visual analytics platform. T
 
 ### Blog Post
 
-Please take a look on my blog post [Vikas Ranjan's Blog](https://vranjan-dsc640-airlinesafety.blogspot.com/2021/02/airline-travel-safety-concerns-facts-vs.html)
+Please take a look on my blog post on airline safety at [Vikas Ranjan's Blog](https://vranjan-dsc640-airlinesafety.blogspot.com/2021/02/airline-travel-safety-concerns-facts-vs.html)
 
 
 
