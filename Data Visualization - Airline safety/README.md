@@ -1,6 +1,6 @@
 ## Airline Safety - Data Visualizations
 
-![image](https://user-images.githubusercontent.com/44445092/128805364-3fa776ea-4310-4735-8605-2d0b9e499b32.png)
+![image](https://user-images.githubusercontent.com/44445092/128805586-b60d833c-d796-4314-9307-59a51a3a99b4.png)
 
 ### Introduction
 
